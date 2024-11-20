@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p 欢迎来到 #[em 本地图书馆], 一个非常基础的Express网站，用作Mozila开发者教学示例。
+
+  h1 动态内容 
+
+  p 图书馆记录如下: 
+  ul 
+    li #[strong 书:] !{book_count}
+    li #[strong 副本:] !{book_instance_count}
+    li #[strong 可用副本:] !{book_instacne_available_count}
+    li #[strong 作者:] !{author_count}
+    li #[strong Genres:] !{genre_count}
